@@ -11,13 +11,13 @@
     <!-- FIN: -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="http://www.cuatrovientos.org">
-            <img src="./../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+            <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +34,28 @@
 
             </ul>
         </div>
+    </nav> <a class="navbar-brand" href="http://www.cuatrovientos.org">
+        <img src="./.../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item ">
+                <a class="navbar-brand" href="../index.html">
+                    <h2 class="display-4">Ejemplos de Bootstrap</h2>
+                </a>
+            </li>
+
+        </ul>
+    </div>
     </nav>
 
-    <div class="container">
-        <div class="jumbotron">
+    <div class="container mt-5 pt-5">
+        <div class="row bd-example-row  mt-5">
             <h3>22. Formularios
                 <br />
                 <small class="text-muted">22.5. Controles de formularios </small>
@@ -79,32 +97,32 @@
                 <code>
                     &lt;form&gt;<br/>
                     &nbsp;&lt;div class="form-group"&gt;<br/>
-                    &nbsp;&nbsp;&lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"&gt;<br/>
                     &nbsp;&lt;/div&gt;<br/>
                     &nbsp;&lt;div class="form-group"&gt;<br/>
-                    &nbsp;&nbsp;&lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;<br/>
-                    &nbsp;&nbsp;&lt;select class="form-control" id="exampleFormControlSelect1"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&lt;/select&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select class="form-control" id="exampleFormControlSelect1"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
                     &nbsp;&lt;/div&gt;<br/>
                     &nbsp;&lt;div class="form-group"&gt;<br/>
-                    &nbsp;&nbsp;&lt;label for="exampleFormControlSelect2"&gt;Example multiple select&lt;/label&gt;<br/>
-                    &nbsp;&nbsp;&lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
-                    &nbsp;&nbsp;&lt;/select&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlSelect2"&gt;Example multiple select&lt;/label&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select multiple class="form-control" id="exampleFormControlSelect2"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
                     &nbsp;&lt;/div&gt;<br/>
                     &nbsp;&lt;div class="form-group"&gt;<br/>
-                    &nbsp;&nbsp;&lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;<br/>
-                    &nbsp;&nbsp;&lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;<br/>&lt;/textarea&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3"&gt;<br/>&lt;/textarea&gt;<br/>
                     &nbsp;&lt;/div&gt;<br/>
                     &lt;/form
     </code>

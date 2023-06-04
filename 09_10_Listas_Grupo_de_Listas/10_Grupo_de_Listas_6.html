@@ -11,13 +11,13 @@
     <!-- FIN: -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="http://www.cuatrovientos.org">
-            <img src="./../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+            <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +34,27 @@
 
             </ul>
         </div>
+    </nav> <a class="navbar-brand" href="http://www.cuatrovientos.org">
+        <img src="./.../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item ">
+                <a class="navbar-brand" href="../index.html">
+                    <h2 class="display-4">Ejemplos de Bootstrap</h2>
+                </a>
+            </li>
+
+        </ul>
+    </div>
     </nav>
-    <div class="container">
-        <div class="jumbotron">
+    <div class="container mt-5 pt-5">
+        <div class="row bd-example-row  mt-5">
             <h3>10. Grupo de listas
                 <br />
                 <small class="text-muted">10.6. Contenido personalizado</small>
@@ -61,13 +79,13 @@
             <code>
                     &lt;div class="list-group"&gt;<br/>
                     &nbsp;&lt;a href="#" class="list-group-item list-group-item-action  list-group-item-info"&gt;<br/>
-                    &nbsp;&nbsp;&lt;h4&gt;<br/>These Boots Are Made For Walking&lt;/h4&gt;<br/>
-                    &nbsp;&nbsp;&lt;p&gt;<br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;<br/>These Boots Are Made For Walking&lt;/h4&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br/>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;<br/>
                     &nbsp;&lt;/a&gt;<br/>
                     &nbsp;&lt;a href="#" class="list-group-item list-group-item-action list-group-item-success"&gt;<br/>
-                    &nbsp;&nbsp;&lt;h4&gt;<br/>Puss 'n' Boots&lt;/h4&gt;<br/>
-                    &nbsp;&nbsp;&lt;p&gt;<br/>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                    &nbsp;&nbsp;&nbsp;sunt explicabo.&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;<br/>Puss 'n' Boots&lt;/h4&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<br/>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sunt explicabo.&lt;/p&gt;<br/>
                     &nbsp;&lt;/a&gt;<br/>
                     &lt;/div&gt;<br/>
             </code>

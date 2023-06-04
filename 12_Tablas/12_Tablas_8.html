@@ -8,13 +8,13 @@
     <!--  INI: Enlace añadido exclusivamente para una correcta visualización de los ejemplos -->
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/assets/css/docs.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="http://www.cuatrovientos.org">
-            <img src="./../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+            <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,28 @@
 
             </ul>
         </div>
+    </nav> <a class="navbar-brand" href="http://www.cuatrovientos.org">
+        <img src="./.../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item ">
+                <a class="navbar-brand" href="../index.html">
+                    <h2 class="display-4">Ejemplos de Bootstrap</h2>
+                </a>
+            </li>
+
+        </ul>
+    </div>
     </nav>
 
-    <div class="container">
-        <div class="jumbotron">
+    <div class="container mt-5 pt-5">
+        <div class="row bd-example-row  mt-5">
             <h3>12 Tablas
                 <br />
                 <small class="text-muted">12.10. Clases contextuales</small>
@@ -115,81 +133,77 @@
             <code>
                 &lt;table class="table"&gt;<br/>
                 &nbsp;&lt;thead&gt;<br/>
-                &nbsp;&nbsp;&lt;tr&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th&gt;Tipo&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Tipo&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Cabecera de columna&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
                 &nbsp;&lt;/thead&gt;<br/>
                 &nbsp;&lt;tbody&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-active"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Activa&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-active"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Activa&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
                 
-                &nbsp;&nbsp;&lt;tr class="table-primary"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;primaria&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-secondary"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;secundaria&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-success"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;exito&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-danger"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;peligro&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-warning"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;atención&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-info"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;información&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-light"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;claro&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
-                &nbsp;&nbsp;&lt;tr class="table-dark"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;oscuro&lt;/th&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
-                &nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-primary"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;primaria&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-secondary"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;secundaria&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-success"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;exito&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-danger"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;peligro&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-warning"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;atención&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-info"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;información&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-light"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;claro&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr class="table-dark"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;oscuro&lt;/th&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;contenido&lt;/td&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
                 &nbsp;&lt;/tbody&gt;<br/>
                 &lt;/table&gt;<br/>
        </code>
         </div>
 
-        <footer class="footer navbar-fixed-bottom">
-            <p>Av. San Jorge 2, 31012 Pamplona-Iruña
-                <a href="tel:(34) 948124129"> (34) 948124129 </a>
-            </p>
+        <footer class="footer fixed-bottom">
             <p>
-                Profesor:
-                <b>Frago, A.</b>
+                Profesor: <b>Frago, A.</b>
             </p>
         </footer>
     </div>

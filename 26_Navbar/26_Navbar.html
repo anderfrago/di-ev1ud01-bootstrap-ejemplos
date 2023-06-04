@@ -8,15 +8,15 @@
     <!--  INI: Enlace añadido exclusivamente para una correcta visualización de los ejemplos -->
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/assets/css/docs.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="http://www.cuatrovientos.org">
-                <img src="./../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+                <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,50 +34,87 @@
 
                 </ul>
             </div>
+        </nav> <a class="navbar-brand" href="http://www.cuatrovientos.org">
+            <img src="./.../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="navbar-brand" href="../index.html">
+                        <h2 class="display-4">Ejemplos de Bootstrap</h2>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
         </nav>
         <div class="container">
             <div class="jumbotron">
                 <h3>26. Nabvar </h3>
             </div>
             <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                    <a class="navbar-brand" href="http://www.cuatrovientos.org">
+                        <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Principal
-                                    <span class="sr-only">(current)</span>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item ">
+                                <a class="navbar-brand" href="../index.html">
+                                    <h2 class="display-4">Ejemplos de Bootstrap</h2>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Características</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Precios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navdropdownMenu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Enlace lista desplegable
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navdropdownMenu">
-                                    <a class="dropdown-item" href="#">Acción</a>
-                                    <a class="dropdown-item" href="#">Otra acción</a>
-                                    <a class="dropdown-item" href="#">Otra cosa aquí</a>
-                                </div>
-                            </li>
+
                         </ul>
-                        <!-- Buscar -->
-                        <form class="form-inline" role="search">
-                            <input type="text" class="form-control">
-                            <button type="submit" class="btn btn-secondary">Buscar</button>
-                        </form>
                     </div>
+                </nav> <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Principal
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Características</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Precios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navdropdownMenu" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Enlace lista desplegable
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navdropdownMenu">
+                                <a class="dropdown-item" href="#">Acción</a>
+                                <a class="dropdown-item" href="#">Otra acción</a>
+                                <a class="dropdown-item" href="#">Otra cosa aquí</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Buscar -->
+                    <form class="form-inline" role="search">
+                        <input type="text" class="form-control">
+                        <button type="submit" class="btn btn-secondary">Buscar</button>
+                    </form>
+                </div>
                 </nav>
             </div>
             <div class="bd-example">
@@ -85,35 +122,35 @@
                     &lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;<br/>
                     &nbsp;&lt;a class="navbar-brand" href="#"&gt;<br/>Navbar&lt;/a&gt;<br/>
                     &nbsp;&lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"&gt;<br/>
-                    &nbsp;&nbsp;&lt;span class="navbar-toggler-icon"&gt;<br/>&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="navbar-toggler-icon"&gt;<br/>&lt;/span&gt;<br/>
                     &nbsp;&lt;/button&gt;<br/>
                     &nbsp;&lt;div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown"&gt;<br/>
-                    &nbsp;&nbsp;&lt;ul class="navbar-nav mr-auto"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;li class="nav-item active"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Principal&lt;span class="sr-only"&gt;<br/>(current)&lt;/span&gt;<br/>&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Características&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Precios&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;li class="nav-item dropdown"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link dropdown-toggle" href="#" id="navdropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enlace lista desplegable
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="dropdown-menu" aria-labelledby="navdropdownMenu"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Acción&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Otra acción&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Otra cosa aquí&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-                    &nbsp;&nbsp;&lt;/ul&gt;<br/>
-                    &nbsp;&nbsp;&lt;!-- Buscar --&gt;<br/>
-                    &nbsp;&nbsp;&lt;form class="form-inline" role="search"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;input type="text" class="form-control"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn btn-secondary"&gt;Buscar&lt;/button&gt;<br/>
-                    &nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="navbar-nav mr-auto"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item active"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Principal&lt;span class="sr-only"&gt;<br/>(current)&lt;/span&gt;<br/>&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Características&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Precios&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item dropdown"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link dropdown-toggle" href="#" id="navdropdownMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enlace lista desplegable
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="dropdown-menu" aria-labelledby="navdropdownMenu"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Acción&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Otra acción&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="dropdown-item" href="#"&gt;Otra cosa aquí&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Buscar --&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form class="form-inline" role="search"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="form-control"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit" class="btn btn-secondary"&gt;Buscar&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
                     &nbsp;&lt;/div&gt;<br/>
                     &lt;/nav&gt;<br/>
                       </code>

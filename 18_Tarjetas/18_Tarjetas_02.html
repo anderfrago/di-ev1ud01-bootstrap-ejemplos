@@ -11,13 +11,13 @@
     <!-- FIN: -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="http://www.cuatrovientos.org">
-            <img src="./../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+            <img src="../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +34,27 @@
 
             </ul>
         </div>
+    </nav> <a class="navbar-brand" href="http://www.cuatrovientos.org">
+        <img src="./.../assets/img/4Vientos_iconoTransparente.PNG" style="width:10rem" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+            <li class="nav-item ">
+                <a class="navbar-brand" href="../index.html">
+                    <h2 class="display-4">Ejemplos de Bootstrap</h2>
+                </a>
+            </li>
+
+        </ul>
+    </div>
     </nav>
-    <div class="container">
-        <div class="jumbotron">
+    <div class="container mt-5 pt-5">
+        <div class="row bd-example-row  mt-5">
             <h3>18. Tarjetas
                 <br />
                 <small class="text-muted">18.2. Navegación en la cabecera</small>
@@ -73,36 +91,32 @@
             <code>
             &lt;div class="card" style="max-width: 20rem;"&gt;<br/>
             &nbsp;&lt;div class="card-header"&gt;<br/>
-            &nbsp;&nbsp;&lt;ul class="nav nav-pills card-header-pills"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Ugg&lt;/a&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Moccasins&lt;/a&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Go Go&lt;/a&gt;<br/>
-            &nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
-            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="nav nav-pills card-header-pills"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Ugg&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Moccasins&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Go Go&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
             &nbsp;&lt;/div&gt;<br/>
             &nbsp;&lt;div class="card-body"&gt;<br/>
-            &nbsp;&nbsp;&lt;h4 class="card-title"&gt;Ugg Boots&lt;/h4&gt;<br/>
-            &nbsp;&nbsp;&lt;p class="card-text"&gt;Best ugg boots on the planet. Free shipping, 24/7 customer service.&lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Ugg Boots&lt;/h4&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Best ugg boots on the planet. Free shipping, 24/7 customer service.&lt;/p&gt;<br/>
             &nbsp;&lt;/div&gt;<br/>
             &nbsp;&lt;div class="card-footer"&gt;<br/>
-            &nbsp;&nbsp;By Uuuuggghhh.com
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Uuuuggghhh.com
             &nbsp;&lt;/div&gt;<br/>
             &lt;/div&gt;<br/>
       </code>
         </div>
 
-        <footer class="footer navbar-fixed-bottom">
-            <p>Av. San Jorge 2, 31012 Pamplona-Iruña
-                <a href="tel:(34) 948124129"> (34) 948124129 </a>
-            </p>
+        <footer class="footer fixed-bottom">
             <p>
-                Profesor:
-                <b>Frago, A.</b>
+                Profesor: <b>Frago, A.</b>
             </p>
         </footer>
     </div>
